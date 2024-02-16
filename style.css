@@ -1,0 +1,25 @@
+#sidebar {
+    background-color: darkseagreen;
+    grid-area: sidebar;
+}
+
+#main {
+    background-color: rgb(227, 232, 239);
+    grid-area: main;
+
+}
+
+#header {
+    grid-area:header; 
+}
+
+#container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
