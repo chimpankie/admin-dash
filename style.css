@@ -1,6 +1,26 @@
+body {
+    margin: 0;
+}
+
+
+
 #sidebar {
     background-color: darkseagreen;
     grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(10, 40px);
+    align-items: center;
+}
+
+
+.icon {
+    width: 30px;
+    fill:white;
+}
+
+.icon:hover {
+    fill: red;
 }
 
 #main {
