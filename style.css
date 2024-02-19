@@ -8,7 +8,7 @@ body {
 
 #sidebar {
     padding-left: 10px;
-    background-color:mediumseagreen;
+    background-color:#16a34a;
     grid-area: sidebar;
     display: grid;
     grid-template-columns: 1fr 2.5fr;
@@ -18,10 +18,25 @@ body {
 
 }
 
+#header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+#topHeader {
+    display: grid;
+    grid-template-columns: 40px auto 40px 70px 10%;
+    gap: 15px;
+}
+
 #logo {
     width: 50px;
     filter: invert(93%) sepia(97%) saturate(0%) hue-rotate(76deg) brightness(105%) contrast(103%);
     justify-self: right;
+}
+
+#profilePicture {
+    width: 70px;
 }
 
 .icon {
@@ -30,8 +45,14 @@ body {
     justify-self: right;
 }
 
+.headerIcon {
+    width: 30px;
 
+}
 
+#profilePicture {
+    border-radius: 50%;
+}
 #main {
     background-color: rgb(227, 232, 239);
     grid-area: main;
