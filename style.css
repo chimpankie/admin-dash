@@ -19,9 +19,9 @@ body {
 }
 
 #logo {
-    width: 40px;
+    width: 50px;
     filter: invert(93%) sepia(97%) saturate(0%) hue-rotate(76deg) brightness(105%) contrast(103%);
- 
+    justify-self: right;
 }
 
 .icon {
@@ -31,10 +31,6 @@ body {
 }
 
 
-
-.icon:hover {
-    fill: red;
-}
 
 #main {
     background-color: rgb(227, 232, 239);
@@ -49,15 +45,24 @@ body {
 #container {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: minmax(200px, 1fr) 4fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
 }
 
+#title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 #sidebar a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.2em;
 }
+
+
