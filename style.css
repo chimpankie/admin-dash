@@ -25,6 +25,10 @@ body {
     grid-template-rows: 1fr 2fr;
 }
 
+#greetingHeader {
+    align-self: center;
+}
+
 #topHeader {
     display: grid;
     grid-template-columns: 40px auto 40px 70px 15%;
@@ -42,7 +46,14 @@ body {
     align-items: center;
     padding-right: 40px;
     gap: 20px;
+    font-weight: bold;
 
+
+}
+
+.smallBold {
+    font-size: small;
+    
 }
 
 .topButton {
