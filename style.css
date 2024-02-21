@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
+    --secondary-color: rgb(227, 232, 239);
+    --primary-color: #16a34a;
 
 }
 
@@ -8,7 +10,7 @@ body {
 
 #sidebar {
     padding-left: 10px;
-    background-color:#16a34a;
+    background-color: var(--primary-color);
     grid-area: sidebar;
     display: grid;
     grid-template-columns: 1fr 2.5fr;
@@ -25,9 +27,48 @@ body {
 
 #topHeader {
     display: grid;
-    grid-template-columns: 40px auto 40px 70px 10%;
-    gap: 15px;
+    grid-template-columns: 40px auto 40px 70px 15%;
+    gap: 20px;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 15px;
+    
 }
+
+#greetingButtons {
+    display: grid;
+    grid-template-columns: 85px auto repeat(3, 85px);
+    margin-left: 40px;
+    align-items: center;
+    padding-right: 40px;
+    gap: 20px;
+
+}
+
+.topButton {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    width: 80px;
+    line-height: 2;
+    padding: 7px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    font-size:1em;
+}
+
+
+
+#searchBar {
+    background-color: var(--secondary-color);
+    border: 0px;
+    border-radius: 20px;
+    line-height: 2;
+    padding: 3px;
+    
+
+}
+
 
 #logo {
     width: 50px;
@@ -36,25 +77,34 @@ body {
 }
 
 #profilePicture {
-    width: 70px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#profilePictureLarge {
+    width: 85px;
+    border-radius: 50%;
+}
+
+#profileName {
+    padding-right: 40px;
+    font-weight: bold;
 }
 
 .icon {
-    width: 30px;
+    width: 25px;
     filter: invert(93%) sepia(97%) saturate(0%) hue-rotate(76deg) brightness(105%) contrast(103%);
     justify-self: right;
 }
 
 .headerIcon {
-    width: 30px;
+    width: 25px;
 
 }
 
-#profilePicture {
-    border-radius: 50%;
-}
+
 #main {
-    background-color: rgb(227, 232, 239);
+    background-color: var(--secondary-color);
     grid-area: main;
 
 }
