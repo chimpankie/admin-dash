@@ -66,17 +66,37 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: minmax(200px, 1fr);
+    gap: 30px;
     
 }
+
 
 h3 {
     margin: 5px;
 }
 
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: 5px solid #AF7a6d;
 
+    
+}
+
+.projectButtonDiv {
+    display: flex;
+    justify-content: end;
+}
 .projectButton {
     width: 20px;
 }
+
+
 
 .smallBold {
     font-size: small;
