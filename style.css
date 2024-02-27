@@ -63,6 +63,23 @@ body {
     padding: 15px;
 }
 
+#mainSidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 40px min-content;
+    align-items: start;
+}
+
+.sidebarBox {
+    border-radius: 15px;
+    padding: 15px;
+    background: white;
+}
+
+#announcementBox {
+    display: grid;
+}
+
 #projectCards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -73,6 +90,7 @@ body {
 
 h3 {
     margin: 5px;
+    margin-left: 0px;
 }
 
 .project {
@@ -86,6 +104,7 @@ h3 {
     white;
     padding: 15px;
     padding-left: 30px;
+    margin-right: 30px;
 
 
     
@@ -158,6 +177,18 @@ h2 {
     width: 50px;
     border-radius: 50%;
     align-self: center;
+    padding: 5px;
+}
+
+#trendingBox {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.trendingIcon {
+    width: 50px;
+    border-radius: 50%;
     padding: 5px;
 }
 
