@@ -6,9 +6,10 @@
 body {
     margin: 0;
     font-family: roboto, Arial, Helvetica, sans-serif;
-    --secondary-color: rgb(227, 232, 239);
-    --primary-color: #16a34a;
-    --tertiary-color: #AF7A6D; 
+    --secondary-color: rgb(212 216 210);
+    --primary-color: #43766C;
+    --tertiary-color: #76453B; 
+    --fourth-color: #B19470;
 
 }
 
@@ -40,7 +41,7 @@ body {
 
 #topHeader {
     display: grid;
-    grid-template-columns: 40px auto 30px 60px 15%;
+    grid-template-columns: 40px auto 30px 30px 60px 15%;
     gap: 10px;
     align-items: center;
     margin-left: 40px;
@@ -80,6 +81,7 @@ body {
     padding: 30px;
     background: white;
     position: relative;	box-shadow: 2px 2px 6px -3px #A0A0A0;
+    margin-bottom: 30px;
 }
 
 #announcementBox {
@@ -90,7 +92,7 @@ body {
 
 #projectCards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 30px;
     margin-right: 30px;
     
@@ -112,6 +114,7 @@ h3 {
     linear-gradient(var(--tertiary-color) 0 0) left/10px   100% no-repeat,
     white;
     padding: 15px;
+    padding-top: 25px;
     padding-left: 30px;
     position: relative;	
     box-shadow: 2px 2px 6px -3px #A0A0A0;
@@ -123,6 +126,8 @@ h3 {
 
 .project h3 {
     margin: 2px;
+    font-size: 1em;
+ 
 }
 .project p {
     margin: 2px;
@@ -134,6 +139,7 @@ h3 {
     display: flex;
     justify-content: end;
     gap:8px;
+    margin-top: 20px;
 }
 .projectButton {
     width: 20px;
@@ -248,15 +254,16 @@ h2 {
 
 #title {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bolder;
 }
 
 #sidebar a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 500;
+
+    font-size: 1.0em;
 }
 
 
